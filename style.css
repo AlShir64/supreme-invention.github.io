@@ -378,7 +378,7 @@ img {
     margin-left: 288px;
     height: 63px;
     width: 439px;
-    height: 63px;
+    height: 102px;
 }
 
 .telephone {
@@ -551,6 +551,7 @@ img {
 
     .contact_maps {
         margin-left: 0px;
+        width: auto;
     }
 
 
