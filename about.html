@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap" rel="stylesheet">
+    <link type="image/x-icon" href="img/faviconka.ru_1_100876.ico" rel="shortcut icon">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Макет сайта ДЗ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="all">
+        <header class="header">
+            <a class="logo" href="index.html"><img src="img/logo.svg" alt="Логотип"></a>
+            <nav>
+                <ul class="menu">
+                    <li class="menu_list"><a class="menu_link " href="index.html"> Главная</a> </li>
+                    <li class="menu_list"><a class="menu_link" href="students.html"> Студенты</a></li>
+                    <li class="menu_list"><a class="menu_link menu_link_active" href="about.html"> О курсе</a></li>
+                    <li class="menu_list"><a class="menu_link " href="contacts.html"> Контакты </a></li>
+                </ul>
+            </nav>
+            <a class="button" href="#">Войти</a>
+        </header>
+        <main class="content_about">
+            <h3 class="subtitle_about">О курсе 📱</h3>
+            <p class="aside_about">Посмотрите видео о нас</p>
+            <video class="video" src="video/video_2.mp4" controls></video>
+        </main>
+    </div>
+
+    <div class="popup">
+        <form class="popup_form" action="#">
+            <h3 class="popup_text">Войти на сайт</h3>
+            <input class="popup_input" name="login" placeholder="Логин">
+            <input class="popup_input" name="password" placeholder="Пароль">
+            <button class="button">Войти</button>
+            <button class="button close">✖</button>
+        </form>
+
+    </div>
+
+    <script>
+        const popupEl = document.querySelector('.popup');
+        const buttonEl = document.querySelector('.button');
+        const blockEl = document.querySelector('.block');
+
+        buttonEl.addEventListener('click', function (e) {
+            popupEl.classList.toggle('visible');
+        });
+
+    </script>
+
+    <footer class="footer">
+        <p> 2023 &copy; <a class="button-text" href="#"> учебный центр </a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
